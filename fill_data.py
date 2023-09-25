@@ -88,6 +88,6 @@ def insert_data_to_db(students, groups, teachers, subjects, grades) -> None:
         con.commit()
 
 
-if __name__ == "__main__":
+def fill_db():
     students, groups, teachers, subjects, grades = prepare_data(*generate_fake_data())
     insert_data_to_db(students, groups, teachers, subjects, grades)

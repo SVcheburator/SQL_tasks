@@ -1,4 +1,6 @@
 import sqlite3
+from fill_data import fill_db
+from create_db import create_database
 
 
 def task_f(number):
@@ -15,8 +17,9 @@ def task_f(number):
 
 
 def main_function():
+    print('Started!')
     while True:
-        inp = input('Which task(number 1-12)? >>> ')
+        inp = input('\nWhich task(number 1-12)? >>> ')
 
         if inp in ['exit', 'close']:
             print('\nGood bye!')
@@ -34,4 +37,10 @@ def main_function():
 
 
 if __name__ == '__main__':
+    print('Creating db...')
+    create_database()
+
+    print('Filling all the data...')
+    fill_db()
+    
     main_function()
