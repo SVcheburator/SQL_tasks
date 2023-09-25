@@ -1,4 +1,4 @@
-# SQL Tasks (Homework №6)
+# SQL Tasks (GoIT homework №6)
 
 ## How to use?
 
